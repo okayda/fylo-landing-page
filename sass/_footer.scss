@@ -1,0 +1,72 @@
+.footer {
+  background-color: $primary-dark-blue;
+  padding: 7.6rem 2rem;
+
+  &__wide-wrap {
+    @include wide(560px);
+
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 1.8rem;
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 5.6rem;
+  }
+
+  &__logo {
+    width: 20rem;
+    height: auto;
+  }
+
+  &__contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+  }
+
+  &__address {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+  }
+
+  &__link {
+    &:link,
+    &:visited {
+      font-size: 1.8rem;
+      color: $neutral-grayish-blue;
+      text-decoration: none;
+    }
+
+    &:hover,
+    &:active {
+      color: lighten($accent-bright-blue, 20%);
+    }
+  }
+
+  &__nav-col .list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    list-style: none;
+  }
+
+  &__social-col .list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    list-style: none;
+  }
+
+  &__social-col &__link:link {
+    display: inline-block;
+    border: 1px solid $neutral-grayish-blue;
+    line-height: 1;
+    padding: 0.8rem;
+    border-radius: 50%;
+  }
+}

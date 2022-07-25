@@ -1,0 +1,72 @@
+.section-hero {
+  @include wide($mobile);
+
+  padding: 2rem 2rem 13.6rem;
+
+  &__img {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+
+  &__title {
+    font-size: 2.4rem;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    text-align: center;
+    line-height: 1.6;
+  }
+
+  &__description {
+    font-size: 1.4rem;
+    text-align: center;
+    padding: 0 1.2rem;
+    line-height: 1.6;
+  }
+}
+
+.section-secondary-hero {
+  position: relative;
+  padding: 6.4rem 2rem;
+  background-color: $neutral-grayish-blue;
+
+  &__wide-wrap {
+    @include wide($mobile);
+  }
+
+  &__introduction {
+    margin-bottom: 4.2rem;
+  }
+
+  &__curve-img {
+    width: 100%;
+    height: auto;
+    top: -4rem;
+    left: 0;
+    position: absolute;
+    z-index: -10;
+
+    &--mobile {
+      display: block;
+    }
+
+    &--dekstop {
+      display: none;
+    }
+  }
+
+  &__img {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+
+  &__title {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+
+  &__description {
+    font-size: 1.4rem;
+  }
+}

@@ -1,0 +1,154 @@
+@media (min-width: 62.5em) {
+  html {
+    font-size: 72.5%;
+  }
+
+  .btn {
+    padding-left: 4rem;
+    padding-right: 4rem;
+    font-size: 1.3rem;
+  }
+
+  .header {
+    &__content {
+      @include wide($dekstop);
+    }
+  }
+
+  .section-hero {
+    max-width: $dekstop;
+
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    column-gap: 0rem;
+    align-items: center;
+    height: 100vh;
+
+    &__img {
+      order: 2;
+      margin-bottom: 0;
+    }
+
+    &__content {
+      order: 1;
+    }
+
+    &__title {
+      padding-right: 2rem;
+      font-size: 3.6rem;
+    }
+
+    &__description {
+      padding-left: 0;
+      padding-right: 6.4rem;
+    }
+
+    &__title,
+    &__description {
+      text-align: left;
+    }
+
+    & .form {
+      &__box {
+        flex-direction: row;
+        padding-right: 4.8rem;
+        align-items: center;
+      }
+
+      &__input {
+        flex-grow: 1;
+      }
+
+      & .btn {
+        padding-top: 1.2rem;
+        padding-bottom: 1.2rem;
+      }
+    }
+  }
+
+  .section-secondary-hero {
+    padding: 7.2rem 2rem;
+
+    &__wide-wrap {
+      max-width: $dekstop;
+
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      column-gap: 7.8rem;
+      margin: 0 auto;
+    }
+
+    &__img {
+      order: 2;
+      margin-bottom: 0;
+    }
+
+    &__content {
+      order: 1;
+    }
+
+    &__curve-img {
+      top: -6rem;
+
+      &--mobile {
+        display: none;
+      }
+
+      &--dekstop {
+        display: block;
+      }
+    }
+  }
+
+  .section-cta {
+    text-align: left;
+
+    &__wide-wrap {
+      max-width: $dekstop;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14rem;
+    }
+
+    &__title {
+      font-size: 2.6rem;
+    }
+
+    & .form {
+      &__box {
+        align-items: stretch;
+      }
+
+      & .btn {
+        align-self: start;
+      }
+    }
+  }
+
+  .footer {
+    &__wide-wrap {
+      max-width: $dekstop;
+    }
+    &__content {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      justify-items: center;
+    }
+
+    &__link {
+      &:link,
+      &:visited {
+        font-size: 1.4rem;
+      }
+    }
+
+    &__logo {
+      width: 16rem;
+      height: auto;
+    }
+
+    &__address-col {
+      justify-self: start;
+    }
+  }
+}

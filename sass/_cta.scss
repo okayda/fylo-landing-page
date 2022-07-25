@@ -1,0 +1,19 @@
+.section-cta {
+  background-color: $primary-desaturated;
+  color: $neutral-grayish-blue;
+  text-align: center;
+  padding: 6.4rem 4.4rem;
+
+  &__wide-wrap {
+    @include wide(46rem);
+  }
+
+  &__title {
+    font-size: 1.6rem;
+  }
+
+  &__description {
+    font-size: 1.4rem;
+    line-height: 1.6;
+  }
+}

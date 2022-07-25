@@ -1,0 +1,370 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  background-color: #fff; }
+
+.btn {
+  display: inline-block;
+  cursor: pointer;
+  background-color: #3065f8;
+  color: #f6f6fe;
+  text-align: center;
+  font-size: 1.6rem;
+  padding: 1.2rem 0;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  border: 2px solid transparent; }
+
+.btn:hover {
+  filter: brightness(120%); }
+
+.form__box {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem; }
+
+.form__input {
+  padding: 1.2rem 1rem;
+  font-size: 1.4rem;
+  border-radius: 4px;
+  border: 1px solid #000; }
+  .form__input:focus {
+    border: 1px solid #8ce99a; }
+  .form__input:focus:invalid {
+    border: 1px solid #ffa8a8; }
+  .form__input::placeholder {
+    color: #bfbfbf; }
+  .form__input:focus {
+    outline: none; }
+
+.underline-btn {
+  display: inline-block; }
+  .underline-btn__btn-link:link, .underline-btn__btn-link:visited {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: #3c9f8f;
+    border-bottom: 2px solid #3c9f8f;
+    padding-bottom: 0.4rem;
+    transition: all 0.3s; }
+  .underline-btn__btn-link:hover, .underline-btn__btn-link:active {
+    color: #9bd9cf;
+    border-color: #9bd9cf; }
+    .underline-btn__btn-link:hover .underline-btn__arr, .underline-btn__btn-link:active .underline-btn__arr {
+      transition: all 0.4s;
+      margin-left: 1rem; }
+
+.testimonial {
+  max-width: 33.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fff;
+  padding: 2.4rem;
+  border-radius: 9px;
+  box-shadow: 0 0 1.4rem rgba(0, 0, 0, 0.1); }
+  .testimonial__quote {
+    display: block;
+    margin-bottom: 1.2rem; }
+  .testimonial__paragraph {
+    font-size: 1.2rem;
+    line-height: 1.6; }
+  .testimonial__person {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem; }
+  .testimonial__img {
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%; }
+  .testimonial__name {
+    font-weight: bold;
+    font-size: 1.1rem; }
+
+.small-size {
+  width: 1.8rem;
+  height: 1.8rem; }
+
+.medium-size {
+  width: 2.2rem;
+  height: 2.2rem; }
+
+.small-bottom-margin {
+  margin-bottom: 1.8rem; }
+
+.medium-bottom-margin {
+  margin-bottom: 2.4rem; }
+
+.large-bottom-margin {
+  margin-bottom: 4.4rem; }
+
+.big-bottom-margin {
+  margin-bottom: 6.4rem; }
+
+.txt-center {
+  text-align: center; }
+
+.header__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2.8rem 2rem; }
+
+.header__logo {
+  width: 10rem;
+  height: auto; }
+
+.header__list {
+  list-style: none;
+  display: flex;
+  gap: 2.2rem;
+  font-size: 1.4rem; }
+
+.header__link:link, .header__link:visited {
+  position: relative;
+  text-decoration: none;
+  color: #000;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400; }
+
+.header__link::after {
+  content: "";
+  transition: all 0.4s;
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 24px;
+  height: 3px;
+  background-color: #444;
+  opacity: 0;
+  visibility: hidden; }
+
+.header__link:hover::after, .header__link:active {
+  opacity: 1;
+  visibility: visible; }
+
+.section-hero {
+  max-width: 54rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2rem 2rem 13.6rem; }
+  .section-hero__img {
+    width: 100%;
+    height: auto;
+    display: inline-block; }
+  .section-hero__title {
+    font-size: 2.4rem;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    text-align: center;
+    line-height: 1.6; }
+  .section-hero__description {
+    font-size: 1.4rem;
+    text-align: center;
+    padding: 0 1.2rem;
+    line-height: 1.6; }
+
+.section-secondary-hero {
+  position: relative;
+  padding: 6.4rem 2rem;
+  background-color: #f6f6fe; }
+  .section-secondary-hero__wide-wrap {
+    max-width: 54rem;
+    margin-left: auto;
+    margin-right: auto; }
+  .section-secondary-hero__introduction {
+    margin-bottom: 4.2rem; }
+  .section-secondary-hero__curve-img {
+    width: 100%;
+    height: auto;
+    top: -4rem;
+    left: 0;
+    position: absolute;
+    z-index: -10; }
+    .section-secondary-hero__curve-img--mobile {
+      display: block; }
+    .section-secondary-hero__curve-img--dekstop {
+      display: none; }
+  .section-secondary-hero__img {
+    width: 100%;
+    height: auto;
+    display: inline-block; }
+  .section-secondary-hero__title {
+    font-size: 1.6rem;
+    text-align: center; }
+  .section-secondary-hero__description {
+    font-size: 1.4rem; }
+
+.section-cta {
+  background-color: #585989;
+  color: #f6f6fe;
+  text-align: center;
+  padding: 6.4rem 4.4rem; }
+  .section-cta__wide-wrap {
+    max-width: 46rem;
+    margin-left: auto;
+    margin-right: auto; }
+  .section-cta__title {
+    font-size: 1.6rem; }
+  .section-cta__description {
+    font-size: 1.4rem;
+    line-height: 1.6; }
+
+.footer {
+  background-color: #070439;
+  padding: 7.6rem 2rem; }
+  .footer__wide-wrap {
+    max-width: 560px;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 1.8rem; }
+  .footer__content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 5.6rem; }
+  .footer__logo {
+    width: 20rem;
+    height: auto; }
+  .footer__contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem; }
+  .footer__address {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem; }
+  .footer__link:link, .footer__link:visited {
+    font-size: 1.8rem;
+    color: #f6f6fe;
+    text-decoration: none; }
+  .footer__link:hover, .footer__link:active {
+    color: #93affb; }
+  .footer__nav-col .list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    list-style: none; }
+  .footer__social-col .list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    list-style: none; }
+  .footer__social-col .footer__link:link {
+    display: inline-block;
+    border: 1px solid #f6f6fe;
+    line-height: 1;
+    padding: 0.8rem;
+    border-radius: 50%; }
+
+@media (min-width: 62.5em) {
+  html {
+    font-size: 72.5%; }
+  .btn {
+    padding-left: 4rem;
+    padding-right: 4rem;
+    font-size: 1.3rem; }
+  .header__content {
+    max-width: 120rem;
+    margin-left: auto;
+    margin-right: auto; }
+  .section-hero {
+    max-width: 120rem;
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    column-gap: 0rem;
+    align-items: center;
+    height: 100vh; }
+    .section-hero__img {
+      order: 2;
+      margin-bottom: 0; }
+    .section-hero__content {
+      order: 1; }
+    .section-hero__title {
+      padding-right: 2rem;
+      font-size: 3.6rem; }
+    .section-hero__description {
+      padding-left: 0;
+      padding-right: 6.4rem; }
+    .section-hero__title, .section-hero__description {
+      text-align: left; }
+    .section-hero .form__box {
+      flex-direction: row;
+      padding-right: 4.8rem;
+      align-items: center; }
+    .section-hero .form__input {
+      flex-grow: 1; }
+    .section-hero .form .btn {
+      padding-top: 1.2rem;
+      padding-bottom: 1.2rem; }
+  .section-secondary-hero {
+    padding: 7.2rem 2rem; }
+    .section-secondary-hero__wide-wrap {
+      max-width: 120rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      column-gap: 7.8rem;
+      margin: 0 auto; }
+    .section-secondary-hero__img {
+      order: 2;
+      margin-bottom: 0; }
+    .section-secondary-hero__content {
+      order: 1; }
+    .section-secondary-hero__curve-img {
+      top: -6rem; }
+      .section-secondary-hero__curve-img--mobile {
+        display: none; }
+      .section-secondary-hero__curve-img--dekstop {
+        display: block; }
+  .section-cta {
+    text-align: left; }
+    .section-cta__wide-wrap {
+      max-width: 120rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14rem; }
+    .section-cta__title {
+      font-size: 2.6rem; }
+    .section-cta .form__box {
+      align-items: stretch; }
+    .section-cta .form .btn {
+      align-self: start; }
+  .footer__wide-wrap {
+    max-width: 120rem; }
+  .footer__content {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center; }
+  .footer__link:link, .footer__link:visited {
+    font-size: 1.4rem; }
+  .footer__logo {
+    width: 16rem;
+    height: auto; }
+  .footer__address-col {
+    justify-self: start; } }
+
+/*
+=> I created the landing page in mobile layout first 
+=> if ever you want to modify something in mobile layout. just open mobile-res scss file 
+*/
+@media (max-width: 21.25em) {
+  .header__list {
+    gap: 1.2rem; } }

@@ -1,0 +1,16 @@
+@import "variables";
+@import "base";
+@import "components";
+@import "utilities";
+
+@import "header";
+@import "hero";
+@import "cta";
+@import "footer";
+@import "dekstop-responsive";
+
+/*
+=> I created the landing page in mobile layout first 
+=> if ever you want to modify something in mobile layout. just open mobile-res scss file 
+*/
+@import "mobile-responsive";
